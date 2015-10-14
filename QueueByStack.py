@@ -21,13 +21,13 @@ class queue:
             return self.stack1.pop()
         else:
             return self.stack2.pop()
-
+'''
     def output(self):
         if len(self.stack1) > 0:
             print self.stack1
         else:
             print self.stack2[::-1]
-
+'''
 
 if __name__ == '__main__':
     events = [('e', 0), ('d', -1), ('e', 1), ('e', 2), ('e', 3), ('d', -1), ('e', 4), ('d', -1), ('d', -1), ('d', -1), ('d', -1), ('e', 5)]
@@ -37,10 +37,10 @@ if __name__ == '__main__':
             if event[0] == 'e':
                 test.enqueue(event[1])
                 print 'Enqueue ' + str(event[1])
-                test.output()
+                #test.output()
             else:
                 print 'Dequeue ' + str(test.dequeue())
-                test.output()
-        except IndexError as e:
-            print e
+                #test.output()
+        except IndexError:
+            print "Dequeue from an empty queue!"
             continue
