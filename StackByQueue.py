@@ -43,5 +43,5 @@ if __name__ == '__main__':
             else:
                 print 'Pop ' + str(test.pop())
         except Queue.Empty as e:
-            print "Pop from an empty stack!"
+            print "Pop an empty stack!"
             continue
