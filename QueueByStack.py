@@ -42,5 +42,5 @@ if __name__ == '__main__':
                 print 'Dequeue ' + str(test.dequeue())
                 #test.output()
         except IndexError:
-            print "Dequeue an empty queue!"
+            print 'Dequeue an empty queue!'
             continue
